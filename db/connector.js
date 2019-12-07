@@ -9,7 +9,7 @@ exports.connect = () => {
             if (err)
                 console.log('Unable to connect to database :', err);
             else
-                console.log('Connected to TestDb successfully');
+                console.log('Connected to ContactList successfully');
         },
         { useUnifiedTopology: true, useNewUrlParser: true })
 }

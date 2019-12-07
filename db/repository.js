@@ -1,12 +1,9 @@
-const Users = require('./recordSchema');
+const Contacts = require('./recordSchema');
 
 exports.getUsers = async () => {
     console.log('try to read users start');
     try {
-        return await Users.find({});
-        
-        //   console.log(users);
-        //  console.log(users[0])
+        return await Contacts.find({});
     }
     catch (error) {
         console.log('Users cannot read: ' + err);

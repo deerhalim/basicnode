@@ -4,7 +4,11 @@ const userSchema = new mongoose.Schema({
     id: mongoose.Schema.Types.ObjectId,
     name: String,
     surname: String,
-    age: Number
+    imageSource: String,
+    eMailAdress: String,
+    phoneNumber: String,
+    addedDate: Date,
+    isFavorite: Boolean,
+    birthday: String
 });
-let Users = mongoose.model('user', userSchema, 'user');
-module.exports = Users;
+module.exports = mongoose.model('Contacts', userSchema, 'Contacts');
